@@ -10,8 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("*")
-                .allowedMethods("GET", "POST")
+                .allowedOrigins("https://baru-haeru.vercel.app/")
+                .allowedMethods("GET")
                 .maxAge(3000);
     }
 }
